@@ -2,7 +2,7 @@
 # Sign-in is via GitHub; every save commits to main and Netlify redeploys (~1 min).
 backend:
   name: github
-  repo: OWNER/halofit # set to the GitHub owner/repo
+  repo: selva439/halofit
   branch: main
   commit_messages:
     update: "Content: update {{slug}} via admin"
