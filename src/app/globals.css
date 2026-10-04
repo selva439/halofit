@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  body { @apply bg-ink font-sans text-white antialiased; }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .section { @apply py-20 md:py-28; }
+  .eyebrow { @apply text-sm font-semibold uppercase tracking-[0.25em] text-halo; }
+  .card { @apply rounded-2xl border border-white/10 bg-ink-800; }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-halo px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-ink transition hover:bg-halo-light;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3.5 text-sm font-bold uppercase tracking-wider text-white transition hover:border-halo hover:text-halo;
+  }
+  .label { @apply mb-1.5 block text-xs font-semibold uppercase tracking-wider text-white/60; }
+  .input {
+    @apply w-full rounded-lg border border-white/10 bg-ink-700 px-4 py-3 text-white placeholder-white/30 outline-none focus:border-halo;
+  }
+}
+
+/* Glowing halo ring behind the hero headline */
+.halo-glow {
+  background:
+    radial-gradient(ellipse 60% 40% at 70% 30%, rgba(245, 183, 0, 0.22), transparent 70%),
+    radial-gradient(ellipse 50% 50% at 10% 90%, rgba(245, 183, 0, 0.08), transparent 70%);
+}
+.grid-lines {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}

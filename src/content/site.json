@@ -1,0 +1,185 @@
+{
+  "name": "Halo Fit",
+  "domain": "https://thehalofit.com",
+  "tagline": "Empower Your Fitness Journey",
+  "description": "Halo Fit is a modern gym offering strength, cardio, functional training and personal coaching. Start your transformation today.",
+  "contact": {
+    "phone": "+91 00000 00000",
+    "whatsapp": "910000000000",
+    "email": "hello@thehalofit.com",
+    "address": "TODO: Street, Area, City, PIN",
+    "mapsUrl": "https://maps.google.com/?q=Halo+Fit",
+    "instagram": "https://instagram.com/"
+  },
+  "hours": [
+    {
+      "days": "Monday – Saturday",
+      "time": "5:00 AM – 10:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "6:00 AM – 12:00 PM"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Welcome to Halo Fit",
+    "headline": [
+      "Train hard.",
+      "Rise higher."
+    ],
+    "sub": "Expert coaching, quality equipment and a community that keeps you showing up. Whatever your goal — fat loss, muscle gain or all-round fitness — we'll get you there.",
+    "image": ""
+  },
+  "stats": [
+    {
+      "value": "TODO+",
+      "label": "Members trained"
+    },
+    {
+      "value": "TODO+",
+      "label": "Pieces of equipment"
+    },
+    {
+      "value": "TODO",
+      "label": "Certified coaches"
+    },
+    {
+      "value": "7",
+      "label": "Days a week"
+    }
+  ],
+  "programs": [
+    {
+      "title": "Strength Training",
+      "body": "Build raw power with progressive, coach-designed lifting programs.",
+      "icon": "dumbbell",
+      "image": ""
+    },
+    {
+      "title": "Cardio & Conditioning",
+      "body": "Boost stamina and heart health with structured cardio and HIIT.",
+      "icon": "heart",
+      "image": ""
+    },
+    {
+      "title": "Functional Training",
+      "body": "Move better in everyday life with mobility, core and athletic drills.",
+      "icon": "bolt",
+      "image": ""
+    },
+    {
+      "title": "Personal Training",
+      "body": "One-on-one coaching with a plan built around your body and schedule.",
+      "icon": "user",
+      "image": ""
+    },
+    {
+      "title": "Weight Loss",
+      "body": "Training plus nutrition guidance for sustainable fat loss.",
+      "icon": "scale",
+      "image": ""
+    },
+    {
+      "title": "Yoga & Flexibility",
+      "body": "Improve balance, recovery and mental clarity.",
+      "icon": "lotus",
+      "image": ""
+    }
+  ],
+  "about": {
+    "heading": "More than a gym — a place to level up",
+    "body": "Halo Fit was built for people who want real, lasting results. Our coaches meet you where you are, build a plan that fits your life, and stay with you every step of the way.",
+    "pillars": [
+      {
+        "title": "Mission",
+        "body": "To give everyone, at every fitness level, the coaching and environment they need to reach their goals."
+      },
+      {
+        "title": "Vision",
+        "body": "To be the community people credit when they talk about changing their lives — physically and mentally."
+      },
+      {
+        "title": "Philosophy",
+        "body": "Consistency over intensity. Sustainable habits beat quick fixes, every time."
+      }
+    ],
+    "image": ""
+  },
+  "whyUs": [
+    {
+      "title": "Expert Coaches",
+      "body": "Certified trainers who correct form and keep you progressing."
+    },
+    {
+      "title": "Quality Equipment",
+      "body": "Well-maintained strength and cardio machines plus a full free-weight zone."
+    },
+    {
+      "title": "Nutrition Guidance",
+      "body": "Practical diet advice that fits Indian meals and your routine."
+    },
+    {
+      "title": "Progress Tracking",
+      "body": "Regular check-ins and body measurements so you see the results."
+    }
+  ],
+  "plans": [
+    {
+      "name": "Monthly",
+      "price": "₹TODO",
+      "period": "/ month",
+      "features": [
+        "Full gym access",
+        "Locker & changing room",
+        "Free fitness assessment"
+      ],
+      "featured": false
+    },
+    {
+      "name": "Quarterly",
+      "price": "₹TODO",
+      "period": "/ 3 months",
+      "features": [
+        "Everything in Monthly",
+        "Diet plan",
+        "Monthly progress check-in"
+      ],
+      "featured": true
+    },
+    {
+      "name": "Annual",
+      "price": "₹TODO",
+      "period": "/ year",
+      "features": [
+        "Everything in Quarterly",
+        "2 personal training sessions / month",
+        "Membership freeze option"
+      ],
+      "featured": false
+    }
+  ],
+  "testimonials": [],
+  "faqs": [
+    {
+      "q": "What are your opening hours?",
+      "a": "See the timings in the contact section below — we're open 7 days a week."
+    },
+    {
+      "q": "Do you offer a free trial?",
+      "a": "Yes — walk in or message us on WhatsApp to book a free trial session."
+    },
+    {
+      "q": "I'm a complete beginner. Is that okay?",
+      "a": "Absolutely. Every new member gets a fitness assessment and a coach-guided start."
+    },
+    {
+      "q": "Is personal training available?",
+      "a": "Yes. Personal training can be added to any membership — ask at the front desk for packages."
+    },
+    {
+      "q": "What should I bring for my first session?",
+      "a": "Comfortable workout clothes, indoor shoes, a water bottle and a small towel."
+    }
+  ],
+  "gallery": []
+}
