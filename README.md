@@ -27,19 +27,23 @@ and the editor's fields are defined in `public/admin/config.yml` (Decap CMS). Ke
 - **Enquiry form** has no backend. It opens WhatsApp with the details filled in, sent to `contact.whatsapp`.
 - Search `site.json` for `TODO` before launch.
 
-## Deploy (Netlify, free tier)
+## Deploy (Cloudflare Pages, free)
 
-1. Push the repo, then in Netlify: *Add new site → Import from Git*.
-2. Set **Base directory** = `halofit`. Build settings come from `halofit/netlify.toml`.
-3. *Domain management → Add domain* → `thehalofit.com`, then at your registrar either
-   switch the nameservers to Netlify DNS, or add:
-   - `A     @    75.2.60.5`
-   - `CNAME www  <your-site>.netlify.app`
-4. HTTPS is issued automatically. `www` redirects to the apex domain.
-5. **Enable /admin sign-in**: create a GitHub OAuth App (GitHub → Settings → Developer
-   settings → OAuth Apps) with callback URL `https://api.netlify.com/auth/done`, then in
-   Netlify → Site configuration → Access & security → OAuth → *Install provider* → GitHub,
-   paste its Client ID and Secret.
+Free plan: unlimited traffic, 500 builds/month, commercial use allowed.
 
-The domain currently shows a registrar site-builder page. Turn that off at the
-registrar when you switch DNS.
+1. **Create the site**: dash.cloudflare.com → *Workers & Pages* → *Create* → *Pages* →
+   *Connect to Git* → pick `selva439/halofit`.
+   - Framework preset: *None* · Build command: `npm run build` · Output directory: `out`
+2. **Domain**: Pages project → *Custom domains* → add `thehalofit.com` and `www.thehalofit.com`.
+   Easiest is adding the domain to Cloudflare (free) and switching the nameservers at your
+   registrar to the two Cloudflare gives you. Turn off the registrar's site builder.
+3. **Admin sign-in** (one-time):
+   - GitHub → Settings → Developer settings → OAuth Apps → *New OAuth App*
+     - Homepage URL: `https://thehalofit.com`
+     - Callback URL: `https://thehalofit.com/api/callback`
+   - Generate a client secret. In the Pages project → *Settings* → *Variables and Secrets*, add
+     `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` (type *Secret*), then retry the latest deployment.
+   - Want to test before the domain is live? Temporarily set the OAuth app's URLs to the
+     `https://<project>.pages.dev` address instead.
+
+Sign-in code is in `functions/api/` (Cloudflare Pages Functions, free tier). Security headers are in `public/_headers`.

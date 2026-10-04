@@ -1,9 +1,10 @@
 # Decap CMS — the team edits content and uploads photos at thehalofit.com/admin.
-# Sign-in is via GitHub; every save commits to main and Netlify redeploys (~1 min).
+# Sign-in is via GitHub (functions/api/*); every save commits to main and Cloudflare Pages redeploys (~1 min).
 backend:
   name: github
   repo: selva439/halofit
   branch: main
+  auth_endpoint: api/auth # base_url is set to the current origin in admin/index.html
   commit_messages:
     update: "Content: update {{slug}} via admin"
     uploadMedia: "Content: upload {{path}} via admin"
